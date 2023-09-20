@@ -220,7 +220,7 @@ body {
             margin: auto;
         }
 
-        .flex_row_section > img {
-            margin: auto;
+        img {
+            margin: 4em auto auto auto;
         }
       }
