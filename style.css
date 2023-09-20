@@ -65,6 +65,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: auto;
     }
     .flex_row_section > div {
         margin-right: 2em;
@@ -82,11 +83,6 @@ body {
     .about_text > ul{
         text-align: left;
         font-size: 1.25em;
-    }
-
-    .flex_row_section > img {
-        margin-left: 2em;
-        margin-right: 2em;
     }
 
     .svgs {
