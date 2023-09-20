@@ -215,4 +215,12 @@ body {
         .information > div {
             margin-top: 2em;
         }
+
+        .flex_row_section > div {
+            margin: auto;
+        }
+
+        .flex_row_section > img {
+            margin: auto;
+        }
       }
