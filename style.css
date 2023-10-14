@@ -246,8 +246,7 @@ footer {
 
     .flex_row_section {
         flex-direction: column;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin: auto;
     }
 
     .name {
