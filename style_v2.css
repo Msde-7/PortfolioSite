@@ -9,6 +9,7 @@ body {
 }
 
 .information {
+    position: relative;
     display: flex;
     -webkit-animation: FadeIn 1s linear 1;
     -moz-animation: FadeIn 1s linear 1;
