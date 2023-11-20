@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: Andale Mono, AndaleMono, monospace;
+    font-feature-settings: "calt" off;
 }
 
 body {
@@ -78,6 +79,7 @@ body {
     height: 20em;
     text-align: left;
     position: relative;
+    font-weight: bold;
 }
 
 .quote::before {
@@ -424,4 +426,6 @@ footer {
     .depiction {
         padding-bottom: 4em;
     }
+
+
 }
