@@ -406,7 +406,7 @@ footer {
 
     @-moz-document url-prefix() {
         .quote::before {
-            top: 6.6em;
+            top: 6.625em;
         }
     }
 
