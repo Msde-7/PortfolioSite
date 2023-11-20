@@ -391,10 +391,6 @@ footer {
         height: 20em;
     }
 
-    .quote > h1 {
-        width: 18em;
-    }
-    
     .quote::before {
         content:'';
         position: relative;
