@@ -72,7 +72,7 @@ body {
 
 .quote {
     flex-direction: column;
-    padding-bottom: 0;
+    padding: 0;
     margin: 0 auto 0 auto ;
     width: 40em;
     height: 20em;
