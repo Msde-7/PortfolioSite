@@ -87,8 +87,8 @@ body {
     width: .5em;
     height: 7em;
     bottom: 0;
-    left: 19.5em;
-    top: 12.6em
+    left: 18.5em;
+    top: 14.5em
 }
 
 .quote::after {
@@ -98,13 +98,22 @@ body {
   width: 7em;
   height: .5em;
   bottom: -1em;
-  left: 16.25em;
+  left: 15.25em;
+}
+
+.quote >h1 {
+    display: inline-block;
+    height: 6em;
+}
+
+.quote > h2 {
+    display: inline-block;
+    height: 2em;
 }
 
 @-moz-document url-prefix() {
     .quote::before {
-        left: 20em;
-        top: 12.62em;
+        
     }
 }
 
@@ -382,7 +391,9 @@ footer {
 
     .quote {
         width: 20em;
+        height: 20em;
     }
+
 
     .quote::before {
         content:'';
@@ -390,9 +401,8 @@ footer {
         background-color: #6d0000;
         width: .25em;
         height: 3.5em;
-        bottom: 0;
         left: 9em;
-        top: 6.7em
+        top: 7.7em
     }
     
     .quote::after {
@@ -401,19 +411,17 @@ footer {
       background-color: #6d0000;
       width: 3.5em;
       height: .25em;
-      bottom: -.5em;
-      left: 7.25em;
+      bottom: .5em;
+      left: 7.35em;
     }
 
     @-moz-document url-prefix() {
         .quote::before {
-            top: 6.625em;
+           
         }
     }
 
     .depiction {
         padding-bottom: 4em;
     }
-
-
 }
