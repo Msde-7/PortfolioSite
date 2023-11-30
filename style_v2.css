@@ -1,7 +1,7 @@
 * {
     margin: 0;
     font-family: Andale Mono, AndaleMono, monospace;
-    font-feature-settings: "calt" off;
+    font-feature-settings: "calt"off;
 }
 
 body {
@@ -74,7 +74,7 @@ body {
 .quote {
     flex-direction: column;
     padding: 0;
-    margin: 0 auto 0 auto ;
+    margin: 0 auto 0 auto;
     width: 40em;
     height: 20em;
     text-align: left;
@@ -83,7 +83,7 @@ body {
 }
 
 .quote::before {
-    content:'';
+    content: '';
     position: relative;
     background-color: #6d0000;
     width: .5em;
@@ -94,40 +94,40 @@ body {
 }
 
 .quote::after {
-  content:'';
-  position: relative;
-  background-color: #6d0000;
-  width: 7em;
-  height: .5em;
-  bottom: -1em;
-  left: 15.25em;
+    content: '';
+    position: relative;
+    background-color: #6d0000;
+    width: 7em;
+    height: .5em;
+    bottom: -1em;
+    left: 15.25em;
 }
 
-.quote >h1 {
+.quote>h1 {
     display: inline-block;
     height: 6em;
 }
 
-.quote > h2 {
+.quote>h2 {
     display: inline-block;
     height: 2em;
 }
 
 
 
-    .quote > h2 {
-        text-align: right;
-        padding-right: 4em;
-        width: 100%;
-    }
+.quote>h2 {
+    text-align: right;
+    padding-right: 4em;
+    width: 100%;
+}
 
-    .depiction {
-        margin: 0 auto 0 auto;
-        padding-bottom: 26em;
-        height: 0px;
-        position: relative;
-        bottom: 9em;
-    }
+.depiction {
+    margin: 0 auto 0 auto;
+    padding-bottom: 20em;
+    height: 0px;
+    position: relative;
+    bottom: 9em;
+}
 
 .info_header {
     text-align: center;
@@ -191,21 +191,21 @@ body {
     text-align: center;
 }
 
-.sisyphus::after{
-    content:'';
-  position: relative;
-  background-color: #6d0000;
-  width: 7em;
-  height: .5em;
-  bottom: -1em;
-  left: 16.25em;
+.sisyphus::after {
+    content: '';
+    position: relative;
+    background-color: #6d0000;
+    width: 7em;
+    height: .5em;
+    bottom: -1em;
+    left: 16.25em;
 }
 
 .rock {
     display: block;
     position: relative;
     bottom: 19em;
-    left:7em;
+    left: 7em;
     border-radius: 100%;
     animation-duration: 26s;
     animation-name: roll;
@@ -213,13 +213,131 @@ body {
     animation-iteration-count: infinite;
 }
 
-@keyframes roll {
+.timeline {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 2em;
+    flex-basis: 1;
+}
+
+.timeline>div {
+    width: 4em
+}
+
+h3 {
+    font-size: 1em;
+}
+
+
+.work_experience {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    width: 40em;
+}
+
+.work_experience::after {
+    position: relative;
+    bottom: 20.25em;
+    content: '';
+    width: 100%;
+    background-color: black;
+    height: .5em;
+    z-index: 1;
+    margin: auto;
+}
+
+.time_sec>button {
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+    background-color: black;
+    position: relative;
+    z-index: 2;
+}
+
+.time_sec {
+    text-align: center;
+}
+
+#pac_button {
+    background-color: #6d0000;
+}
+
+#fadeContainer>h4 {
+    font-size: 2em;
+    text-align: center;
+    margin: .5em auto .5em auto;
+}
+
+
+
+#job {
+    border: .25em dashed black;
+    margin: 1em auto auto auto;
+    border-radius: .5em;
+    height: 15em;
+    width: 98%;
+}
+
+#fadeContainer {
+    margin: 0;
+    padding: 0;
+    line-height: 180%;
+    width: 100%;
+}
+
+#fadeContainer>ul {
+    text-align: left;
+    font-size: 1.25em;
+}
+
+.fade {
+    -webkit-animation: JobFade 1s linear 1;
+    -moz-animation: JobFade 1s linear 1;
+    -o-animation: JobFade 1s linear 1;
+    animation: JobFade 1s linear 1;
+
+}
+
+ul {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+
+
+
+@keyframes JobFade {
     0% {
-      transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 0;
+    }
+
+    55% {
+        opacity: 0;
     }
 
     100% {
-      transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
 
@@ -378,7 +496,7 @@ footer {
         height: 100px;
         width: 100px;
         bottom: 11em;
-        left:4.3em;
+        left: 4.3em;
     }
 
     .sisyphus {
@@ -392,7 +510,7 @@ footer {
     }
 
     .quote::before {
-        content:'';
+        content: '';
         position: relative;
         background-color: #6d0000;
         width: .25em;
@@ -400,20 +518,51 @@ footer {
         left: 10em;
         top: 7.7em
     }
-    
+
     .quote::after {
-      content:'';
-      position: relative;
-      background-color: #6d0000;
-      width: 3.5em;
-      height: .25em;
-      bottom: .5em;
-      left: 8.35em;
+        content: '';
+        position: relative;
+        background-color: #6d0000;
+        width: 3.5em;
+        height: .25em;
+        bottom: .5em;
+        left: 8.35em;
     }
+
 
     .depiction {
         padding-bottom: 4em;
     }
 
+    
+    .work_experience {
+        margin: auto;
+        width: 25em;
+    }
+    
+    .work_experience::after {
+        bottom: 29em;
+        height:.25em;
+    }
+    
+    .time_sec>button {
+        width: 2.5em;
+        height: 2.5em;
+    }
+    
+    .time_sec > h5 {
+        font-size: 1em;
+        text-align: center;
+        font-weight: normal;
+    }
+
+    #job {
+        height: 24em;
+        width: 98%;
+    }
+
+    ul {
+        padding-right: 0;
+    }
 
 }
