@@ -537,11 +537,11 @@ footer {
     
     .work_experience {
         margin: auto;
-        width: 25em;
+        width: 20em;
     }
     
     .work_experience::after {
-        bottom: 29em;
+        bottom: 27.25em;
         height:.25em;
     }
     
@@ -557,12 +557,13 @@ footer {
     }
 
     #job {
-        height: 24em;
         width: 98%;
+        height: auto;
+        height: 22em;
+
     }
 
     ul {
         padding-right: 0;
     }
-
 }
