@@ -287,8 +287,9 @@ h3 {
 #job {
     border: .25em dashed #6d0000;
     margin: 1em auto auto auto;
+    padding-top: 1em;
     border-radius: .5em;
-    height: 15em;
+    height: 14em;
     width: 98%;
 }
 
@@ -302,6 +303,7 @@ h3 {
 #fadeContainer>ul {
     text-align: left;
     font-size: 1.25em;
+    padding-left: 30px;
 }
 
 .fade {
@@ -601,7 +603,7 @@ footer {
     }
     
     .work_experience::after {
-        bottom: 27.25em;
+        bottom: 24.25em;
         height:.25em;
     }
     
@@ -651,8 +653,10 @@ footer {
     #job {
         width: 98%;
         height: auto;
-        height: 22em;
-
+        height: 18em;
+        margin-top:1em;
+        padding-top: auto;
+        padding-right: .5em;
     }
 
     ul {
