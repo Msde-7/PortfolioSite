@@ -3,6 +3,7 @@
 * {
     margin: 0;
     font-family: 'League Spartan', sans-serif;
+    line-height: 115%;
 }
 
 body {
@@ -137,6 +138,8 @@ body {
 .info_header {
     text-align: center;
     font-size: 4em;
+    padding-top: .2em;
+    padding-bottom: .2em;
 }
 
 .crimson {
@@ -246,7 +249,7 @@ h3 {
 
 .work_experience::after {
     position: relative;
-    bottom: 20.25em;
+    bottom: 20.4em;
     content: '';
     width: 100%;
     background-color: black;
@@ -254,6 +257,14 @@ h3 {
     z-index: 1;
     margin: auto;
 }
+
+@-moz-document url-prefix() {
+    .work_experience::after {
+        bottom: 20.25em;
+    }
+
+}
+
 
 .time_sec>button {
     width: 4em;
@@ -317,6 +328,12 @@ h3 {
 ul {
     padding-left: 20px;
     padding-right: 20px;
+  
+}
+
+ul > li {
+    padding-top: .2em;
+    padding-bottom: .2em;
 }
 
 .goal_grid {
@@ -365,7 +382,7 @@ ul {
     width: 0;
     position: relative;
     left: 5.2em;
-    top: 2.6em;
+    top: 2.97em;
     
 }
 
@@ -603,9 +620,15 @@ footer {
     }
     
     .work_experience::after {
-        bottom: 24.25em;
+        bottom: 24.3em;
         height:.25em;
     }
+
+    @-moz-document url-prefix() {
+        .work_experience::after {
+            bottom: 24.1em;
+        }
+     }
     
     .time_sec>button {
         width: 2.5em;
@@ -625,21 +648,15 @@ footer {
         width: 0;
         position: relative;
         left: 3.5em;
-        top: 4.41em;
+        top: 4.9em;
     }
 
     .goal_grid > div {
+        padding-top: 1em;
         padding-bottom: 0;
         padding-left: .1em;
     }
 
-    #p_goal {
-        padding: 0;
-    }
-
-    #a_goal {
-        padding-top: .5em;
-    }
 
     .smaller_header {
         font-size: 1.25em;
