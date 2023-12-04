@@ -611,7 +611,7 @@ footer {
     
     .goal_grid {
         width: 21em;
-        height: 20em;
+        height: 280px;
     }
 
     .goal_grid::after {
@@ -621,8 +621,8 @@ footer {
         height: 0;
         width: 0;
         position: relative;
-        left: 3.4em;
-        top: 4.29em;
+        left: 190px;
+        top: 240px;
         
     }
 
