@@ -9,6 +9,10 @@ body {
     background-size: cover;
 }
 
+.otherRed {
+    background-color: #DC143C;
+}
+
 .information {
     position: relative;
     display: flex;
@@ -19,7 +23,7 @@ body {
 }
 
 .gradient_font {
-    background-image: linear-gradient(45deg, #fffef2, #DC143C, #fffef2);
+    background-image: linear-gradient(45deg, white, #6d0000, white);
     background-size: 40%;
     background-position: center;
     -webkit-background-clip: text;
@@ -273,10 +277,14 @@ h3 {
     margin: .5em auto .5em auto;
 }
 
+.smaller_header {
+    font-size: 2em;
+}
+
 
 
 #job {
-    border: .25em dashed black;
+    border: .25em dashed #6d0000;
     margin: 1em auto auto auto;
     border-radius: .5em;
     height: 15em;
@@ -307,6 +315,57 @@ ul {
     padding-left: 20px;
     padding-right: 20px;
 }
+
+.goal_grid {
+    margin: auto;
+    margin-top: 1em;
+    width:40em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+    text-align: center;
+    grid-gap: -10px;
+    
+}
+
+.goal_grid > div {
+    padding-bottom: .2em;
+}
+
+#p_goal {
+    grid-column: 1;
+    grid-row: 1;
+    border-bottom: .25em dashed #6d0000;
+
+}
+
+#a_goal {
+    grid-column: 2;
+    grid-row: 2;
+    border-left: .25em dashed #6d0000;
+    border-bottom: .25em dashed #6d0000;
+
+}
+
+#c_goal {
+    grid-column: 3;
+    grid-row: 3;
+    border-left: .25em dashed #6d0000;
+    border-bottom: .25em dashed #6d0000;
+}
+
+.goal_grid::after {
+    content:">";
+    color:#6d0000;
+    font-size: 5em;
+    height: 0;
+    width: 0;
+    position: relative;
+    left: 5.2em;
+    top: 2.37em;
+    
+}
+
 
 
 
@@ -550,6 +609,39 @@ footer {
         height: 2.5em;
     }
     
+    .goal_grid {
+        width: 21em;
+        height: 20em;
+    }
+
+    .goal_grid::after {
+        content:">";
+        color:#6d0000;
+        font-size: 4em;
+        height: 0;
+        width: 0;
+        position: relative;
+        left: 3.4em;
+        top: 4.29em;
+        
+    }
+
+    .goal_grid > div {
+        padding-bottom: 0;
+        padding-left: .1em;
+    }
+
+    #p_goal {
+        padding: 0;
+    }
+
+    #a_goal {
+        padding-top: .5em;
+    }
+
+    .smaller_header {
+        font-size: 1.25em;
+    }
     .time_sec > h5 {
         font-size: 1em;
         text-align: center;

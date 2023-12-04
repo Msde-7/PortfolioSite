@@ -92,6 +92,25 @@
         class = "rock" src="Rock.jpg" width="200" height=200">
       </div>
 
+      <div class="goals">
+      
+        <h3 class="info_header crimson">Goals</h3>
+        <div class="goal_grid">
+        <div id="p_goal">
+          <h4 class="smaller_header">Personal</h4>
+          <p>Start playing Bass Guitar in a band again</p>
+        </div>
+        <div id ="a_goal">
+        <h4 class="smaller_header">Academic</h4>
+        <p>Maintain my 4.0 GPA next semester</p>
+        </div>
+        <div id="c_goal">
+        <h4 class="smaller_header">Career</h4>
+        <p>Do experiential learning next summer</p>
+        </div>
+        </div>
+      </div>
+
       <div class="flex_row_section coding">
         <div class="coding_grid">
           <i class="devicon-android-plain-wordmark colored"></i>
@@ -186,6 +205,7 @@
 
       //Text selectors
       const jobSel = document.getElementById('job_title');
+      console.log(jobSel)
       const desc1Sel = document.getElementById('desc1');
       const desc2Sel = document.getElementById('desc2');
       const desc3Sel = document.getElementById('desc3');
@@ -226,7 +246,7 @@
       const moesSet = new ButtonSet(
         moesButton,
         "Team Member - Moe's Southwest Grill",
-        'Esecuted multiple tasks simultaneously in the back and front of the store',
+        'Executed multiple tasks simultaneously in the back and front of the store',
         'Prepared food and operated drive thru',
         'Worked with teammates to close store promptly after hours'
       );
@@ -256,6 +276,8 @@
             selector.button.style.backgroundColor = '#6d0000';
           else button.style.backgroundColor = 'black';
         }
+        
+        console.log(selector);
 
         setTimeout(() => {
           jobSel.textContent = selector.jobTitle;
