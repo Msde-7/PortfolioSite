@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/andale-mono');
+
 * {
     margin: 0;
     font-family: Andale Mono, AndaleMono, monospace;
@@ -127,7 +129,7 @@ body {
 
 .depiction {
     margin: 0 auto 0 auto;
-    padding-bottom: 20em;
+    padding-bottom: 15em;
     height: 0px;
     position: relative;
     bottom: 9em;
@@ -611,7 +613,7 @@ footer {
     
     .goal_grid {
         width: 21em;
-        height: 280px;
+        height: 20em;
     }
 
     .goal_grid::after {
@@ -621,9 +623,9 @@ footer {
         height: 0;
         width: 0;
         position: relative;
-        left: 190px;
-        top: 240px;
-        
+        left: 33em;
+        top: 4.29em;
+        display: none;
     }
 
     .goal_grid > div {
