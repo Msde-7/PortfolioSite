@@ -92,31 +92,19 @@
       
         <h3 class="info_header crimson">Goals</h3>
         <div class="goal_grid">
-        <div id="p_goal" onclick="updateGoals('p')">
+        <div id="p_goal">
           <h4 class="smaller_header">Personal</h4>
           <p>Start playing Bass Guitar in a band again</p>
         </div>
 
-        <div id="p_desc" class="goal_descs" onclick="updateGoals('p')">
-          <p>I plan to accomplish this goal by setting an hour a day to practice bass guitar and by reaching out to my friends who play musical instruments.</p>
-        </div>
-
-        <div id ="a_goal" onclick="updateGoals('a')">
+        <div id ="a_goal>
         <h4 class="smaller_header">Academic</h4>
         <p>Get into research next semester</p>
         </div>
 
-        <div id="a_desc" class="goal_descs" onclick="updateGoals('a')">
-          <p>I plan to accomplish this goal by reaching out to different faculty and students in research, along with building up my portfolio.</p>
-        </div>
-
-        <div id="c_goal" onclick="updateGoals('c')">
+        <div id="c_goal">
         <h4 class="smaller_header">Career</h4>
         <p>Do experiential learning next summer</p>
-        </div>
-
-        <div id="c_desc" class="goal_descs" onclick="updateGoals('c')">
-          <p>I plan to accomplish this goal by spending at least an hour a day working on my resume, portfolio, or by applying to opportunites.</p>
         </div>
 
         </div>
@@ -254,17 +242,13 @@
               <li>Interests: Math, computer science, history, music, and philosophy</li>
               <li>Active member of Fintech @ IU, the Luddy LLC, CS Club, and Machine Learning Club</li>
               <li>Luddy and Cox Scholar</li>
+              <li>Passionate about environmentalism and founded Lebanon High School's Sustainability Club </li>
               <li>Fun fact: I own a tortoise!</li>
-              <li style="list-style-type: none;"><b>Personality types - Myers-Briggs Type: ENTP, Strong Interest Inventory: ICE</b></li>
-              <li>I generally agree with the outcome of these assessments, with me being outgoing, analytical, and self-driven</li>
-              <li>I tend not to try to align myself with any specific result and aim to achieve what I believe is best</li>
             </ul>
           </div>
             <div>
             <div class="slideshow-container">
 
-              <!-- Full-width images with number and caption text -->
-              <!--From w3-->
               <div class="mySlides fade">
                 <div class="numbertext">1 / 5</div>
                 <img src="fencePic.png" style="width:100%">
@@ -290,13 +274,11 @@
                 <img src="beretPic.png" style="width:100%">
               </div>
             
-              <!-- Next and previous buttons -->
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <br>
             
-            <!-- The dots/circles -->
             <div style="text-align:center">
               <span class="dot" onclick="currentSlide(1)"></span>
               <span class="dot" onclick="currentSlide(2)"></span>
@@ -459,18 +441,6 @@
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
 }   
-
-      function updateGoals(s) {
-        console.log(s);
-        if(document.getElementById(s + "_goal").style.display == "none") {
-          document.getElementById(s + "_desc").style.display = "none";
-          document.getElementById(s + "_goal").style.display = "block";
-        }
-        else{
-          document.getElementById(s + "_desc").style.display = "block";
-          document.getElementById(s + "_goal").style.display = "none";
-        }
-      }
     </script>
   </body>
 </html>
