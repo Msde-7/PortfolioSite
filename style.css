@@ -395,14 +395,14 @@ ul > li {
 }
 
 .academic_time{
-    padding-top: 6em;
+    padding: 1em;
+    padding-bottom: 3em;
     background-color: white;
     width: 40em;
     border: .1em solid black;
     box-shadow: 2px 2px 5px black;
     overflow-x: hidden;
     overflow-y: auto;
-    padding: 1em;
     
 }
 
@@ -658,7 +658,7 @@ footer {
 }
 .box {
     min-width: 400px;
-    height: 530px;
+    height: 550px;
     text-align: center;
     transition: opacity 0.5s, filter 0.5s, transform 0.5s;
     position: relative;
@@ -725,9 +725,13 @@ footer {
     position: absolute;
     left: 10px;
     top:10px;
-
+    border-radius: 100%;
     padding: 0;
     margin: 0;
+}
+
+.white_color {
+    fill: white;
 }
 
 @media only screen and (max-width: 550px) {
@@ -896,7 +900,7 @@ footer {
 }
 
 .academic_time{
-    width: 20em;
+    width: 22em;
     height: 20em;
 }
 
@@ -911,6 +915,22 @@ footer {
     max-width: 300px;
     height: auto;
     border: .25em solid black;
+}
+
+.box {
+    min-width: 320px;
+    height: 450px;
+}
+
+.box img {
+    width: 100%;
+    height: 320px;
+    border-bottom: 2px solid black;
+
+}
+
+.container {
+    width: 320px;
 }
 
 .A_container > img{
