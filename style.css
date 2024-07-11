@@ -12,10 +12,6 @@ body {
     overflow-x: hidden;
 }
 
-.otherRed {
-    background-color: #DC143C;
-}
-
 .information {
     position: relative;
     display: flex;
@@ -240,33 +236,6 @@ body {
 h3 {
     font-size: 1em;
 }
-
-
-.work_experience {
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-    width: 40em;
-}
-
-.work_experience::after {
-    position: relative;
-    bottom: 18.9em;
-    content: '';
-    width: 100%;
-    background-color: black;
-    height: .5em;
-    z-index: 1;
-    margin: auto;
-}
-
-@-moz-document url-prefix() {
-    .work_experience::after {
-        bottom: 18.75em;
-    }
-
-}
-
 
 .time_sec>button {
     width: 4em;
@@ -824,22 +793,6 @@ footer {
         padding-bottom: 4em;
     }
 
-    
-    .work_experience {
-        margin: auto;
-        width: 20em;
-    }
-    
-    .work_experience::after {
-        bottom: 22.75em;
-        height:.25em;
-    }
-
-    @-moz-document url-prefix() {
-        .work_experience::after {
-            bottom: 22.55em;
-        }
-     }
     
     .time_sec>button {
         width: 2.5em;
