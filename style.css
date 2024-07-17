@@ -12,6 +12,14 @@ body {
     overflow-x: hidden;
 }
 
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    font-size: 1.25em;
+}
+
 .information {
     position: relative;
     display: flex;
@@ -299,7 +307,7 @@ h3 {
 ul {
     padding-left: 20px;
     padding-right: 20px;
-  
+    font-size: 1em;
 }
 
 ul > li {
@@ -475,7 +483,6 @@ ul > li {
 
 .welcome_text > p {
     text-indent: 2em;
-    font-size: 1.25em;
 }
 
 @keyframes fade {
@@ -627,7 +634,7 @@ footer {
 }
 .box {
     min-width: 400px;
-    height: 550px;
+    height: 585px;
     text-align: center;
     transition: opacity 0.5s, filter 0.5s, transform 0.5s;
     position: relative;
@@ -706,6 +713,14 @@ footer {
 @media only screen and (max-width: 550px) {
     * {
         font-size: 14px;
+    }
+
+    p {
+        font-size: 1em;
+    }
+    
+    li {
+        font-size: 1em;
     }
 
     .resume>iframe {
