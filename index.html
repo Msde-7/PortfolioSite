@@ -40,7 +40,7 @@
       <div class="flex_row_section animate__animated animate__slideInUp welcome">
         <div class = "welcome_text" style="width: 25em">
           <h3 class="info_header crimson">Welcome!</h3>
-          <p>Hello, and welcome to my portfolio! I'm Gabe Shores, a sophomore at IU Bloomington, pursuing B.S. degrees in Computer Science and Mathematics. I'm a passionate problem solver who thrives on learning and pushing my limits. With this portfolio I aim to highlight my personality, passions, and achievements, while also demonstrating my growth in front-end development. </p>
+          <p>Hello, and welcome to my portfolio! I'm Gabe Shores, a junior at IU Bloomington, pursuing a B.S. in both Computer Science and Mathematics. I'm a passionate problem solver who thrives on learning and pushing my limits. With this portfolio I aim to highlight my personality, passions, and achievements, while also demonstrating my growth in front-end development. </p>
         </div>
 
         <div>
@@ -158,15 +158,15 @@
         <div class="about_text" style="width: 25em">
           <h3 class="info_header crimson">Programming</h3>
           <ul>
-            <li>Self-taught coder for 3+ years</li>
-            <li>2+ years of experience in Java</li>
+            <li>Self-taught coder for 4+ years</li>
+            <li>3+ years of experience in Java</li>
             <li>Used coding knowledge to make an eclipse tracker for my school's webstream</li>
+            <li>Optimizing cell simulations with a team of global researchers to help fight cancer</li>
             <li>
-              Currently making projects with Java, Android Studio, and 3.JS
+              Currently making projects with Java, React.js, Python, and Firebase
             </li>
             <li>
-              Experience in Java, HTML, CSS, Javascript, Android Studio, SQL,
-              Python, and C
+              Experience in Java, Unit Testing (JUnit), JavaScript, HTML, CSS, React.js, Tailwind, Android Studio, Python, PyTorch, NumPy, C, SQL
             </li>
             <li>
               Favorite resources: Scrimba, Udemy, FreeCodeCamp, Coursera, EdX, and Youtube (Fireship, Tech With Tim, Brocode, Low Level Learning)
@@ -322,13 +322,14 @@
         const rightBtn = document.getElementById('right-btn');
         let translateProjectBox = (window.innerWidth <= 500) ? 320 : 400;
 
-        function onResize() {
+      function onResize() {
+        translateProjectBox = (window.innerWidth <= 500) ? 320 : 400;
+        console.log("Adjustment: " + translateProjectBox)
           if (currentIndex < boxes.length - 1) {
             currentIndex++;
         } else {
             currentIndex = 0;
         }
-        translateProjectBox = (window.innerWidth <= 500) ? 320 : 400;
         updateCarousel();
       }
       
